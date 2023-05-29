@@ -1,1 +1,1 @@
-# Ui-Automaion-Playground
+# Ui-Automation-Playground

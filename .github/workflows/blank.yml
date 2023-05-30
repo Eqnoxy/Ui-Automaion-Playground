@@ -25,7 +25,7 @@ jobs:
       - name: execute py script # test_playground.py
         env:
           SOME_SECRET: ${{ secrets.SOME_SECRET }}
-        run: python test_playground.py
+        run: python3 test_playground.py
 
       - name: commit files
         run: |

@@ -2,7 +2,7 @@ name: test_playground.py
 
 on:
   schedule:
-    - cron: '0 0 * * *' # At 00:00 
+    - cron: '0 * * * *' # At 00:00 
 
 jobs:
   build:
@@ -20,7 +20,6 @@ jobs:
       - name: install python packages
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
           pip install pytest-playwright
           playwright install
       - name: execute py script # test_playground.py

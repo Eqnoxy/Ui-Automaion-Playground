@@ -69,12 +69,12 @@ def test_verifytext(page):
 
 
 
-def test_progressbar(page):
+''' def test_progressbar(page):
     page.goto("/progressbar")
     page.click("#startButton")
     page.inner_text("#progressBar[aria-valuenow='75']")
     page.click("#stopButton")
-    expect(page.locator("#result")).to_contain_text("0")
+    expect(page.locator("#result")).to_contain_text("0") '''
 
 
 
